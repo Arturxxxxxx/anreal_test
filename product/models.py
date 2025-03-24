@@ -3,6 +3,7 @@ from django.db import models
 
 class Category(models.Model):
     category = models.CharField(max_length=50, unique=True, verbose_name='Категория')
+    image = models.ImageField(upload_to='product/', blank=True, null=True)
 
     def __str__(self):
         return self.category
