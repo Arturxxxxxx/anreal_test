@@ -6,3 +6,4 @@ drf-yasg
 django-jazzmin==3.0.1
 pillow
 psycopg2-binary
+drf-spectacular
