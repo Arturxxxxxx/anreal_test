@@ -13,5 +13,5 @@ class ProductSerializer(serializers.ModelSerializer):
         model = ProductHome
         fields = ('id', 'category', 'image', 'title', 'address', 'year', 'category_name')
 
-    def get_category_name(self, obj):
-        return obj.category.category  
+    def get_category_name(self, obj: ProductHome) -> str:
+        return obj.category.category if obj.category else ""
