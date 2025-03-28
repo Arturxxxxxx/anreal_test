@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['13.49.244.251', '172.31.47.158', 'promgrad.pp.ua']
+ALLOWED_HOSTS = ['13.49.244.251', 'promgrad.pp.ua']
 
 
 # Application definition
@@ -145,6 +145,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
     "http://localhost:3000",
+    'https://promgrad.pp.ua'
 ]
 
 CORS_ALLOW_METHODS = (
