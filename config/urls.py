@@ -6,8 +6,8 @@ from rest_framework import permissions
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('product/', include('product.urls')),
+    path('api/admin/', admin.site.urls),
+    path('api/product/', include('product.urls')),
     
     # Генерация схемы API
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
