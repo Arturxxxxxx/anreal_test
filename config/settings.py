@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.49.244.251', 'promgrad.pp.ua']
+ALLOWED_HOSTS = ['promgrad.pp.ua']
 
 
 # Application definition
